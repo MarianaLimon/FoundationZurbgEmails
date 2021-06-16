@@ -1,0 +1,85 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{subject}}</title>
+    <!-- <style> -->
+  </head>
+  <body>
+    <span class="preheader">{{description}}</span>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            <div style="color:gray; text-decoration:none; font-size:12px;margin:10px;">
+                Si este correo no se visualiza correctamente de&nbsp; 
+                <webversion
+                    style="color:gray; text-decoration:underline; font-size:12px">
+                    clic aquí
+                </webversion>
+            </div>
+          </center>
+          <center>
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+            {{> body}}
+          </center>
+          <div style="text-align: center;">
+            <div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12x; background-color: rgb(255, 255, 255); text-align: center;"><br />
+              <span style="color: rgb(38, 50, 56); font-family: Roboto, sans-serif; font-size: 13px; text-align: center; background-color: rgb(255, 255, 255);">
+                IMPORTANTE: El presente correo electr&oacute;nico es una informativa t&eacute;cnica, profesional o comercial, la cual puede contener<br>
+                informaci&oacute;n privilegiada confidencial est&aacute; dirigida solo y &uacute;nicamente para los m&eacute;dicos o profesionales de la salud <br>
+                inscritos en nuestra base de datos por lo que est&aacute; estrictamente prohibida su reproducci&oacute;n, reenviarlo o copiarlo, <br>
+                cualquier env&iacute;o no autorizado ser&aacute; responsabilidad del emisor del correo. Esta informaci&oacute;n puede ser usada &uacute;nicamente <br>
+                por el destinatario.  En caso de error o cambio al no ser el destinatario del mismo, notifique al remitente y proceda <br>
+                a eliminarlo de manera total, incluyendo ligas y adjuntos en su caso, su incumplimiento genera responsabilidad legal. <br>
+                El texto y material contenido en el presente correo es propiedad de Productos Medix S.A. de C.V. as&iacute; como sus <br>
+                derechos intelectuales e industriales, bajo el debido cumplimiento de autorizaci&oacute;n sanitaria que en su caso  <br>
+                corresponda.Cualquier punto a tratar con el presente se puede escribir a 
+                <b style="color: rgb(31, 78, 121); font-size: 12.8px; text-align: start;">
+                  <a href="mailto:soporte@medix.com.mx" style="color: rgb(17, 85, 204);" target="_blank">
+                    soporte@medix.com.mx
+                  </a>
+                </b> <br>
+                o en nuestra p&aacute;gina 
+                <a href="http://www.medix.com.mx/" title="Medix">
+                  <span style="color:#1e6acc;">
+                    www.medix.com.mx
+                  </span>
+                </a><br />
+                <br />
+            </div>
+            <br>
+            <span style="font-size:11px;">As&iacute; mismo ponemos a su disposici&oacute;n 
+              <span style="font-family:arial;">
+                <a  href="https://www.medicalmedix.com/terminos-y-condiciones" title="Términos y Condiciones ">
+                  <span style="color:#1e6acc;">T&eacute;rminos y Condiciones</span>
+                </a>
+                <span style="color:#1e6acc;"> |</span>
+                <a href="https://www.medicalmedix.com/politica-de-privacidad" title="Política de Privacidad">
+                  <span style="color:#1e6acc;"> Pol&iacute;tica de Privacidad</span>
+                </a>
+                <span style="color:#1e6acc;"> | </span>
+                <a href="https://www.medicalmedix.com/aviso-legal" title="Aviso Legal ">
+                  <span style="color:#1e6acc;">Aviso Legal&nbsp;</span>
+                </a><br />
+                En la página <a href="http://www.medicalmedix.com.mx/" title=""><span style="color:#1e6acc;">medicalmedix.com.mx </span></a>
+                <span style="color:#1e6acc;"> &nbsp;N&ordm; Aut: 143300202C0017 &nbsp;</span><br> 
+                <br>
+                <unsubscribe style="color:#1e6acc;">Cancelar Suscripci&oacute;n&nbsp;</unsubscribe><br /><br />
+              </span>
+            </span>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+
